@@ -1,0 +1,40 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-image: url('home/c872t665/public_html/lab06/exercise_3/images/dinos.jpg'); */
+    background-image: url("images/dinosaurs.jpg");
+}
+
+h1 {
+    text-align: center;
+} 
+
+.sticker-image {
+    width: 375px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image-label {
+    text-align: center;
+}
+
+.price {
+    text-align: center;
+}
+
+p.error {
+    color: red;
+}
+
+.orderHeader {
+    background-color: lightgray;
+}
+
+table, th, td {
+    border: 1px solid;
+}

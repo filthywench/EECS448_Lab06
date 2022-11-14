@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Shop</title>
+      <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <h1>Christopher Sticker Shop</h1> 
+
+        <div class="row">
+            <div class="chris">
+                <img src="images/coding_chris.PNG" class="sticker-image">
+                <p class="image-label">Traditional Coding Christopher</p>
+                <p class="price">$2.00</p>
+            </div>
+            <div class="anti">
+                <img src="images/anti_chris.PNG" class="sticker-image">
+                <p class="image-label">Anti-Chris</p>
+                <p class="price">$2.50</p>
+            </div>
+            <div class="bball">
+                <img src="images/basketball_chris.PNG" class="sticker-image">
+                <p class="image-label"><b>*LIMITED EDITION* </b>Basketball Chris</p>
+                <p class="price">$3.50</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!-- <h3 style="text-align: center;">Please select your order: </h3>  -->
+          
+            <!-- <form action="customerBackend.php"> -->
+            <form id="action" method="post" action="customerBackend.php" onsubmit="return validate()">
+                <!-- <div class="row"> -->
+                    <div class="info">
+                        <div class="input">
+                            <h3 class="orderHeader">Please set a username and password: </h3>
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email"> <br> <br>
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="message">
+                                <p id="error-p" class="error"></p>
+                        </div>
+                    </div>
+                    <div class="quantities">
+                        <h3 class="orderHeader">Select your order:</h3>
+                        <h4>Traditional Coding Chris</h4>
+                        <label for="chris">Quantity: </label>
+                        <input type="number" name="chris" id="chris" min="0" value="0">
+                        <br><br>
+                        <h4>Anti-Chris</h4>
+                        <label for="anti">Quantity: </label>
+                        <input type="number" name="anti" id="anti" min="0" value="0">
+                        <br><br>
+                        <h4>Basketball Chris</h4>
+                        <label for="bball">Quantity: </label>
+                        <input type="number" name="bball" id="bball" min="0" value="0">
+                        <p id="error-p2" class="error"></p>
+                        <br><br>
+                    </div>
+                    <div class="shipping">
+                        <h3 class="orderHeader">Shipping</h3>
+                        <p name="shipping" id="shipping"><b>Please Select Shipping Type: </b> <p>
+                            <input type="radio" id="seven" name="ship" value="a">
+                            <label for "seven">Free 7-day (<b>$0.00</b>)</label> <br>
+                            <input type="radio" id="three" name="ship" value="b">
+                            <label for "three">3-day (<b>$5.00</b>)</label> <br>
+                            <input type="radio" id="overnight" name="ship" value="c">
+                            <label for "overnight">Overnight (<b>$50.00</b>)</label> <br>
+                            <p id="error-p3" class="error"></p>
+                            <br>
+                            <input type="submit" value="Submit Order">
+                            <input type="reset" value="Reset">
+                  
+                    </div>
+                <!-- </div> -->
+
+                
+                
+            </form>
+            
+    
+        
+
+    </body>
+
+    
+    <script type="text/javascript" src="formChecker.js"></script>
+
+
+</html>
